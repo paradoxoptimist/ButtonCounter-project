@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     private String TAG="MainActivity";
 
     private Button incButton;
+    private Button decButton;
+    private Button resetButton;
     private TextView display;
 
     @Override
@@ -34,12 +36,41 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        decButton = findViewById(R.id.decButtonId);
+        decButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
+                Log.i(TAG, "***************************I pressed the button***************************");
+            }
+        });
 
+        resetButton = findViewById(R.id.resetButtonId);
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
+                Log.i(TAG, "***************************I pressed the button***************************");
+            }
+        });
     }
+
 
     private void incrementCounter(){
         int currentValue = Integer.valueOf(display.getText().toString());
         currentValue++;
+        display.setText(String.valueOf(currentValue));
+    }
+
+    private void decrementCounter(){
+        int currentValue = Integer.valueOf(display.getText().toString());
+        currentValue--;
+        display.setText(String.valueOf(currentValue));
+    }
+
+    private void resetCounter(){
+        int currentValue = Integer.valueOf(display.getText().toString());
+        currentValue = 0;
         display.setText(String.valueOf(currentValue));
     }
 
