@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
                 Log.i(TAG, "***************************I pressed the button***************************");
+                incrementCounter();
             }
         });
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
                 Log.i(TAG, "***************************I pressed the button***************************");
+                decrementCounter();
             }
         });
 
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
                 Log.i(TAG, "***************************I pressed the button***************************");
+                resetCounter();
             }
         });
     }
