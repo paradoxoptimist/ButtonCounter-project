@@ -17,7 +17,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <IncrementButton
+    <Button
         android:id="@+id/incButtonId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/displayId"
         app:layout_constraintVertical_bias="0.103"/>
 
-    <DecrementButton
+    <Button
         android:id="@+id/decButtonId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.103"/>
 
 
-    <ResetButton
+    <Button
         android:id="@+id/resetButtonId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
